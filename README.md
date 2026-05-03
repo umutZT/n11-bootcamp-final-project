@@ -1,8 +1,5 @@
 # 🛒 n11 — E-Commerce Microservices (Bootcamp Bitirme Projesi)
 
-[![Backend CI](https://github.com/<USER>/<REPO>/actions/workflows/backend-ci.yml/badge.svg)](https://github.com/<USER>/<REPO>/actions/workflows/backend-ci.yml)
-[![Docker Build](https://github.com/<USER>/<REPO>/actions/workflows/docker-build.yml/badge.svg)](https://github.com/<USER>/<REPO>/actions/workflows/docker-build.yml)
-
 Mikroservis mimarisi ile geliştirilmiş, **Saga Orchestration Pattern** uygulayan e-ticaret sistemi. JWT auth, RabbitMQ mesajlaşma, Iyzico ödeme entegrasyonu, React frontend + Spring Boot backend.
 
 ## 🎯 Proje Özellikleri
