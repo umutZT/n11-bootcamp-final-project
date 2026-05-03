@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\" -Directory | Where-Object { $_.Name -match \"maven|java|jdk\" } | Select-Object FullName; Get-ChildItem \"C:\\\\Program Files\\\\Java\" -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\tools\" -ErrorAction SilentlyContinue | Select-Object Name; $env:JAVA_HOME)",
+      "PowerShell($mvn = \"C:\\\\Program Files\\\\JetBrains\\\\IntelliJ IDEA 2025.3.3\\\\plugins\\\\maven\\\\lib\\\\maven3\\\\bin\\\\mvn.cmd\"; $env:JAVA_HOME = \"C:\\\\Program Files\\\\Java\\\\jdk-21.0.10\"; Set-Location \"C:\\\\Users\\\\Umut Öztürk\\\\Desktop\\\\n11-bootcamp-project\\\\ecommerce-saga\"; & $mvn -q -DskipTests clean install 2>&1)",
+      "PowerShell($mvn = \"C:\\\\Program Files\\\\JetBrains\\\\IntelliJ IDEA 2025.3.3\\\\plugins\\\\maven\\\\lib\\\\maven3\\\\bin\\\\mvn.cmd\"; $env:JAVA_HOME = \"C:\\\\Program Files\\\\Java\\\\jdk-21.0.10\"; Set-Location \"C:\\\\Users\\\\Umut Öztürk\\\\Desktop\\\\n11-bootcamp-project\\\\ecommerce-saga\"; & $mvn -DskipTests clean install 2>&1 | Select-Object -Last 30)",
+      "Bash(dir C:\\\\Users\\\\Umut Öztürk\\\\Desktop\\\\n11-bootcamp-project\\\\ecommerce-saga\\\\config-server\\\\src\\\\main\\\\resources\\\\config *)",
+      "Bash(mvn clean *)",
+      "PowerShell(Get-Command *)",
+      "Bash(mvn -q -pl order-service,payment-service -am compile -DskipTests)",
+      "Bash(npm --version)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(npm run *)",
+      "Bash(curl *)",
+      "Bash(taskkill /F /FI \"WINDOWTITLE eq*\" /IM node.exe)",
+      "PowerShell(Get-Process *)"
+    ]
+  }
+}

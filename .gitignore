@@ -1,0 +1,46 @@
+# Environment files — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Maven
+target/
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.iws
+*.ipr
+
+# Node (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+# Node (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+
+# Logs
+*.log
+logs/
+
+# Local configuration overrides
+application-local.properties
+application-local.yml
+
+
+
+
